@@ -10,7 +10,7 @@ import Grid from "@mui/material/Grid2";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
-import type { Post } from "../_actions/main";
+import type { Post } from "../_types/blog.types";
 
 const SyledCard = styled(Card)(({ theme }) => ({
   display: "flex",

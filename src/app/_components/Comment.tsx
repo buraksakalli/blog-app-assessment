@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
-import type { Comment as CommentType } from "../_actions/main";
+import type { Comment as CommentType } from "../_types/comment.type";
 
 type CommentProps = {
   comment: CommentType;

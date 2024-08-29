@@ -1,28 +1,7 @@
 import { cache } from "react";
 
-export type Post = {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-  imageUrl: string;
-};
-
-type Image = {
-  albumId: number;
-  id: number;
-  title: string;
-  url: string;
-  thumbnailUrl: string;
-};
-
-export type Comment = {
-  postId: number;
-  id: number;
-  name: string;
-  email: string;
-  body: string;
-};
+import type { Image, Post } from "../_types/blog.types";
+import type { Comment } from "../_types/comment.type";
 
 export const getPosts = cache(async (): Promise<Array<Post>> => {
   const res = await fetch(`${process.env.API_URL}/posts`, {
